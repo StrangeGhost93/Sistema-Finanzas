@@ -480,4 +480,4 @@ class ControlFinanzasApp(ctk.CTk):
 
 if __name__ == "__main__":
   app = ControlFinanzasApp()
-  app.mainloop()
+  app.mainloop()!

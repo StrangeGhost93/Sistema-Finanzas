@@ -1,0 +1,60 @@
+# Gestor de Finanzas Personales Pro
+
+Aplicación de escritorio desarrollada en Python para la gestión, control y análisis de finanzas personales. Permite registrar ingresos y gastos, filtrar movimientos por períodos, analizar el presupuesto mediante gráficos interactivos y exportar el historial a planillas de Excel.
+
+---
+
+## Características Principales
+
+* **Registro de Transacciones:** Control de ingresos y gastos categorizados (*Supermercado*, *Tecnología*, *Vivienda*, *Auto*, *Servicios*, *Sueldo*, etc.) con descripciones opcionales.
+* **Resumen Financiero:** Cálculo automático del balance general (Ingresos − Gastos) e indicadores de saldos en tiempo real.
+* **Filtros por Período:** Filtrado dinámico por mes y año para consultar estadísticas históricas o de un período específico.
+* **Visualización de Datos:**
+  * **Gráfico Circular:** Distribución porcentual del total de gastos por categoría.
+  * **Gráfico de Barras:** Comparativa directa entre el total de ingresos y gastos del período seleccionado.
+* **Historial de Movimientos:** Tabla interactiva para consultar el registro completo de transacciones y eliminar entradas individuales o vaciar la base de datos.
+* **Exportación a Excel:** Generación de reportes descargables en formato `.xlsx`.
+* **Almacenamiento Local Seguro:** Uso de base de datos SQLite (`finanzas.db`), manteniendo la información guardada localmente en la computadora.
+
+---
+
+## Requisitos y Tecnologías
+
+* **Lenguaje:** Python 3.10+
+* **Interfaz Gráfica:** `customtkinter`, `tkinter`
+* **Procesamiento de Datos:** `pandas`
+* **Visualización de Gráficos:** `matplotlib`
+* **Base de Datos:** `sqlite3`
+* **Exportación a Excel:** `openpyxl`
+
+---
+
+## Instalación y Ejecución
+
+### 1. Clonar el repositorio
+```bash
+git clone [https://github.com/StrangeGhost93/Sistema-Finanzas.git](https://github.com/StrangeGhost93/Sistema-Finanzas.git)
+cd Sistema-Finanzas
+
+2. Crear y activar el entorno virtual
+En Windows (PowerShell):
+
+Bash
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+3. Instalar las dependencias
+Bash
+pip install -r requirements.txt
+4. Ejecutar la aplicación
+Bash
+python app.py
+Compilación a Ejecutable (.exe)
+Para generar el ejecutable autónomo para Windows:
+
+Bash
+pip install pyinstaller
+pyinstaller --noconsole --onefile app.py
+El ejecutable generado se encontrará en la carpeta dist/app.exe.
+
+Licencia
+Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo LICENSE para más información.
